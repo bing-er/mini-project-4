@@ -1,8 +1,8 @@
 # Fashion-MNIST Classifier for StyleSort
 
-## Team Members
-- Binger Yu - [contributions]
-- Vibhor Malik - [contributions]
+## Team Members - Group 8
+- Binger Yu
+- Vibhor Malik
 
 ## Project Overview
 StyleSort, an online fashion retailer, faces a 32% return rate due to product miscategorization. This project develops a deep learning classifier to automatically categorize fashion items into 10 categories, reducing costly misclassifications and improving customer satisfaction.
@@ -143,14 +143,14 @@ Loss: CrossEntropyLoss
 
 ## Team Contributions
 
-### [Your Name]
+### Binger Yu
 - Implemented baseline and deep network architectures (model.py)
 - Developed training pipeline (train.py)
 - Ran experiments 1 and 2
 - Created confusion matrix and misclassification visualizations
 - Wrote Methodology and Results sections
 
-### [Partner Name]
+### Vibhor Malik
 - Implemented data loading and utilities (utils.py)
 - Ran experiment 3
 - Performed business analysis (cost-weighted accuracy, threshold analysis)
@@ -170,19 +170,3 @@ Academic project for COMP 9130 - Mini Project 4
 - Fashion-MNIST dataset: Zalando Research
 - PyTorch framework: Meta AI
 - Course instructors and TAs
-```
-
----
-
-### **2. Report for Learning Hub (15 pts)**
-
-Create a Word document or PDF with these sections:
-
-#### **Title Page**
-```
-Fashion-MNIST Image Classification for StyleSort
-COMP 9130 - Mini Project 4
-
-[Your Name]
-[Partner Name]
-[Date]
