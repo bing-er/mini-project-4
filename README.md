@@ -1,9 +1,5 @@
 # Fashion-MNIST Classifier for StyleSort
 
-## Team Members - Group 8
-- Binger Yu
-- Vibhor Malik
-
 ## Project Overview
 StyleSort, an online fashion retailer, faces a 32% return rate due to product miscategorization. This project develops a deep learning classifier to automatically categorize fashion items into 10 categories, reducing costly misclassifications and improving customer satisfaction.
 
