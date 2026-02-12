@@ -145,6 +145,7 @@ mini-project-4/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── Data
 ├── notebooks/
 │   └── fashion_classifier.ipynb    # Main analysis notebook
 ├── src/
