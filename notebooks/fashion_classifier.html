@@ -7840,14 +7840,31 @@ a.anchor-link {
 </tr>
 </tbody>
 </table>
-<p><strong>Best Model:</strong></p>
-<p><strong>Business Impact:</strong></p>
-<p><strong>Deployment Recommendation:</strong></p>
+<h3 id="Best-Model">Best Model<a class="anchor-link" href="#Best-Model">¶</a></h3><p><strong>Deep Network (784→256→128→64→10) with Dropout and Batch Normalization</strong></p>
+<p>This model achieved the highest test accuracy of <strong>88.96%</strong>, outperforming both the baseline (87.80%) and the lower learning-rate model (84.64%). The use of Dropout and Batch Normalization improved generalization and reduced overfitting, making it the most reliable performer.</p>
+<hr/>
+<h3 id="Business-Impact">Business Impact<a class="anchor-link" href="#Business-Impact">¶</a></h3><p>The selected model exceeds the business target of 85% accuracy and can significantly reduce product misclassification. Since misclassification is a major driver of StyleSort’s high return rate (32% vs. 20% industry average), improved categorization can:</p>
+<ul>
+<li>Reduce return-related costs</li>
+<li>Improve customer satisfaction</li>
+<li>Increase trust in product listings</li>
+<li>Lower reverse-logistics and operational costs</li>
+</ul>
+<p>Error analysis shows that most confusion occurs between visually similar items (e.g., <em>Shirt vs T-shirt/top</em>), which is expected in fashion datasets. Overall performance still delivers strong business value.</p>
+<hr/>
+<h3 id="Deployment-Recommendation">Deployment Recommendation<a class="anchor-link" href="#Deployment-Recommendation">¶</a></h3><p>Deploy the <strong>Deep Network model</strong> as the primary classifier using a confidence-threshold strategy:</p>
+<ul>
+<li>Use high-confidence predictions for automatic labeling</li>
+<li>Flag low-confidence cases for human review</li>
+<li>Continuously retrain with new product data</li>
+<li>Monitor high-impact confusion pairs (e.g., Shirt vs T-shirt/top)</li>
+</ul>
+<p>This hybrid approach balances automation and accuracy, minimizing costly misclassifications while maintaining scalability.</p>
 <hr/>
 <h2 id="Notebook-Structure">Notebook Structure<a class="anchor-link" href="#Notebook-Structure">¶</a></h2><ol>
 <li><strong>Setup &amp; Data Loading</strong> - Fashion-MNIST dataset preparation</li>
 <li><strong>Experiment 1: Baseline Model</strong> - Simple 2-layer network (87.80%)</li>
-<li><strong>Experiment 2: Deep Network</strong> - 3-layer with regularization (88.12%)</li>
+<li><strong>Experiment 2: Deep Network</strong> - 3-layer with regularization (88.96%)</li>
 <li><strong>Experiment 3: Lower Learning Rate</strong> - Hyperparameter tuning ()</li>
 <li><strong>Model Comparison</strong> - Performance analysis across experiments</li>
 <li><strong>Business Analysis</strong> - Cost-weighted accuracy and confusion matrix</li>
