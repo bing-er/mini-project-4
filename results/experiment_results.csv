@@ -1,4 +1,4 @@
 Experiment,Architecture,Optimizer,Regularization,Epochs,Parameters,Test Accuracy (%)
-Baseline,784 -> 128 -> 10,Adam (0.001),None,10,101770,87.8
-Deep Network,784 -> 256 -> 128 -> 64 -> 10,Adam (0.001),Dropout + BatchNorm,15,243658,88.12
-Lower LR,784 -> 128 -> 10,Adam (0.0001),None,10,101770,84.89
+Baseline,784 -> 128 -> 10,Adam (0.001),None,10,101770,87.88
+Deep Network,784 -> 256 -> 128 -> 64 -> 10,Adam (0.001),Dropout + BatchNorm,15,243658,88.96
+Lower LR,784 -> 128 -> 10,Adam (0.0001),None,10,101770,84.64

@@ -22,7 +22,6 @@ class FashionClassifier(nn.Module):
         return x
 
 
-# ⭐ ADD THIS NEW CLASS BELOW ⭐
 class DeepFashionClassifier(nn.Module):
     """
     Deeper neural network with 3 hidden layers, dropout, and batch normalization.
